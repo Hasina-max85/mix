@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="swiper-bundle.min.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    
+    
+    <div class="header">
+       
+        <nav>
+            <ul class="menu">
+                <li><a href="">TOUT</a></li>
+                <li><a href="">BIO</a></li>
+                <li><a href="">MIX</a></li>
+                <li><a href="">MENU</a></li>
+
+
+
+            </ul>
+
+
+        </nav>
+    </div>
+    
+    <form>
+        <div class="contenu">
+            <div class="image">
+
+
+            </div>
+
+            <div class="nom">
+                <h3></h3>
+            </div>
+
+
+
+            <div class="texte">
+
+                <section>
+                    <p>
+                    <h4>Martin Garrix</h4>
+                    Son vrai nom est Martin Gerard Garritsen, né en 14 mai 1996 à Pays-Bas (Amstelveen)<br>
+                    Martin Garrix est né à Amstelveen, une ville située près d'Amestedam aux Pays-Bas.<br>
+                    Sa famille est relativement discrète , mais il a mentionné à plusieurs reprises qu'ils soutiennent énormément dans sa carrière.<br>
+                    Il a une sœur aînée nomée Laura Garritsen.
+    </p>
+                </section>
+
+            </div>
+            <div class="barredeRecherche">
+        <div class="box">
+            <h1></h1>
+            <form>
+                <input type="text" name="" placeholder="Tapez le MIX">
+                <input type="submit" name="" value="Search">
+            </form>
+        </div>
+            </div>
+            <div class="container">
+<div class="main-video">
+    <div class="video">
+        <video src="BEST_KYGO_MIX_[SUMMER_2015](360p).mp4" controls></video>
+        <h3 class="title">video title goes here</h3>
+
+    </div>
+</div> 
+    <div class="video-list">
+        <div class="vid active">
+            <video src="BEST_KYGO_MIX_[SUMMER_2015](360p).mp4" muted></video>
+        <h3 class="title">video title goes here</h3>
+
+        </div>
+        <div class="vid">
+            <video src="kygO.mp4" muted></video>
+        <h3 class="title">0-video title goes here</h3>
+
+        </div>
+        <div class="vid">
+            <video src="Kygo_Mix___Best_Remixes___Mashups(160).mp4" muted></video>
+        <h3 class="title">video title goes here</h3>
+
+        </div>
+        <div class="vid">
+            <video src="Kygo_Mix___Best_Remixes___Mashups(160).mp4" muted></video>
+        <h3 class="title">video title goes here</h3>
+
+        </div>
+        <div class="vid">
+            <video src="Kygo_Mix___Best_Remixes___Mashups(160).mp4" muted></video>
+        <h3 class="title">video title goes here</h3>
+
+        </div>
+    </div>
+
+   
+
+            </div>
+
+        
+<div class="footer">
+    <p>
+    
+    
+    <div class="plateforme">
+        Suivre Kygo sur:
+        <div class="classa">
+        <a href=""><i class="fab fa-facebook"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-spotify"></i></a>
+        <a href=""><i class="fab fa-youtube"></i></a>
+        </div>
+        
+    </div>
+    </p>
+</div>
+        </div>
+    </form>
+    <div class="navbar">
+        <p>
+    na
+        </p>
+                </div>
+                <div class="navbar1">
+                    <p>
+                na
+                    </p>
+                            </div>
+            
+<script>
+     let listVideo=document.querySelectorAll('.video-list .vid');
+     let mainVideo=document.querySelector('.main-video video');
+     let title=document.querySelector('.main-video .title');
+     listVideo.forEach(video =>{
+        video.onclick=() =>{
+            listVideo.forEach(vid =>vid.classList.remove('active'));
+            video.classList.add('active');
+            if(video.classList.contains('active')){
+       let src= video.children[0].getAttribute('src');
+       mainVideo.src=src;
+       let text=video.children[1].innerHTML;
+       title.innerHTML=text;
+            };
+        };
+     });
+</script>
+    
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: white;
+            overflow-x: hidden;
+            
+        }
+        .box{
+        width: 500px;
+        margin-top: -10%;
+    
+        }
+        input[type="text"]{
+           background: #4e4a4a; 
+           width: 340px;
+           height: 50px;
+           border: none;
+           outline: none;
+           padding: 0 25px;
+           border-radius:25px 0 0 25px ;
+        }
+        input[type="submit"]{
+            position: relative;
+            left: -5px;
+            border-radius: 0 25px 25px 0;
+            width: 150px;
+            height: 50px;
+            border: none;
+            cursor: pointer;
+            background:#ffc107 ;
+            color: #fff;
+        }
+        input[type="submit"]:hover{
+            background: #ff5722;
+        }
+        input{
+            position: relative;
+            display: inline-block;
+            font-size: 20px;
+            box-sizing: border-box;
+            transition: .5s;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 15px;
+            align-items: flex-start;
+            padding: 5px 25%;
+            top: 2%;
+            right: 20%;
+            position:relative;
+        }
+        .container .main-video{
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .container .main-video video{
+            width: 100%;
+            border-radius: 5px;
+        }
+        .container .main-video title{
+            color:#333;
+            font-size: 23px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .container .video-list{
+            background: #fff;
+            border-radius: 5px;
+            height: 520px;
+            overflow-y: scroll;
+        }
+        .container .video-list .vid video{
+            width: 100px;
+            border-radius: 5px ;
+        }
+        .container .video-list::-webkit-scrollbar{
+            width: 7px;
+        }
+        .container .video-list::-webkit-scrollbar-track{
+            background: #ccc;
+            border-radius: 50px;
+        }
+        .container .video-list::-webkit-scrollbar-thumb{
+            background: #666;
+            border-radius: 50px;
+        }
+        .container .video-list .vid{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background: #f7f7f7;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            border:1px solid rgba(0,0,0,.1);
+            cursor: pointer;
+        }
+        
+        .navbar1{
+            right:0%;
+            color: rgb(75, 35, 35);
+           background: rgb(75, 35, 35);
+            width: 2vw;
+            top:0%;
+            height: 265vh;
+            border-bottom-left-radius: 20px;
+            border-top-left-radius: 20px;
+            position: absolute;
+            
+        }
+        .container .video-list .vid.active{
+            background: #2980b9;
+        }
+        .container .video-list .vid.active .title{
+            color: #fff;
+        }
+        .container .video-list .vid .title{
+            color: #333;
+            font-size: 17px;
+        }
+        @media(max-width:991px){
+            .container{
+                grid-template-columns: 1.5fr 1fr;
+                padding: 10px;
+            }
+            .contenu .texte section{
+                width: 20vw;
+                height: 5vh;
+                font-size: 10px;
+                margin-top: 10%;
+                overflow: scroll;
+                padding-top: 10%;
+                bottom: 20%;
+                position: relative;
+            }
+        }
+        @media(max-width:768px){
+            .container{
+                grid-template-columns:1fr;
+                
+            }
+            .contenu .image{
+                width: 10vw;
+                height: 50vh;
+                background-size: cover;
+            }
+        }
+
+        .navbar{
+            left:0%;
+            color: rgb(75, 35, 35);
+           background: rgb(75, 35, 35);
+            width: 2vw;
+            top:0%;
+            height: 265vh;
+            border-bottom-right-radius: 20px;
+            border-top-right-radius: 20px;
+            position: absolute;
+            
+        }
+        .contenu .footer{
+            width: 50vw;
+            height: 10vh;
+            padding-bottom: 2%;
+            
+        }
+        .contenu .footer .plateforme .classa{
+            background-color: black;
+            clip-path: polygon(7% 0, 100% 0, 95% 100%, 0 100%);
+            width: 50vw;
+            height: 12vh;
+        }
+        .contenu .footer .plateforme a i{
+            color:white;
+            margin: 5%;
+            
+            
+            
+        }
+        .contenu .footer .classa{
+            justify-content: center;
+            align-items: center;
+            padding-left: 30%;
+        }
+        
+        .contenu {
+            top: 30%;
+            position: absolute;
+            width: 100%;
+            padding: 1%;
+            display: list-item;
+            left: 20%;
+            list-style-type: none;
+
+        }
+        .contenu .texte{
+            margin-top: 35%;
+            min-height: 50vh;
+            padding: 5%;
+
+        }
+        .contenu .texte section{
+            padding:0% 5% 0%;
+            margin: 2%;
+            width: 40vw;
+            margin-right: 2%;
+            padding-right: 10%;
+            padding-top: -10%;
+            
+            
+            
+        }
+
+        .contenu .nom {
+            margin-left: 30%;
+            text-align: center;
+            justify-content: center;
+        }
+        
+
+        .contenu .image {
+            width: 50vw;
+            opacity: 90%;
+            top: 0%;
+            position: absolute;
+            height: 70vh;
+            background-image: url(57edb27d5c1a6e6ac7549bb23e082fd3.webp);
+            animation: change 10s infinite ease-in-out;
+            background: red;
+            left: 5%;
+            padding-bottom: 7%;
+
+        }
+
+        @keyframes change {
+            0% {
+                background-image: url(martin.webp);
+
+            }
+
+            20% {
+                background-image: url(martin.webp);
+
+            }
+
+            40% {
+                background-image: url(martin.webp);
+
+            }
+
+            60% {
+                background-image: url();
+
+            }
+
+            80% {
+                background-image: url();
+            }
+
+            100% {
+                background: url();
+            }
+        }
+
+        .contenu .image img {
+            width: 50vw;
+            height: 60vh;
+            position: fixed;
+            justify-content: center;
+        }
+
+      
+        .search {
+            width: max-content;
+            display: flex;
+            align-items: center;
+            padding: 14px;
+            border-radius: 28px;
+            background: #80b41f;
+            --padding: 14px;
+            padding: var(--padding);
+        }
+
+        .search-input {
+            font-size: 16px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: #3333;
+            margin-left: var(--padding);
+            outline: none;
+            border: none;
+            background: transparent;
+        }
+
+        @keyframes bg-animation {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .header {
+            background-color: blue;
+            height: 15vh;
+            width: 40vw;
+            left: 30%;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1%;
+            clip-path: polygon(7% 0, 100% 0, 95% 100%, 0 100%);
+            min-height: 13vh;
+            background: linear-gradient(90deg, #00c3ff, #ff00ff, #ff6600, #00ff99);
+
+            background-size: 300% 300%;
+            animation: bg-animation 4s infinite alternate;
+
+        }
+
+        nav {
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        nav ul li {
+            list-style-type: none;
+            display: inline-block;
+            padding: 2%;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 2%;
+        }
+
+        ul li a {
+            color: #fff;
+            letter-spacing: 0.1rem;
+            text-decoration: none;
+            justify-content: center;
+            align-items: center;
+            top: 7%;
+
+
+
+        }
+
+        ul li a:hover {
+            color: rgb(248, 83, 6);
+            text-decoration: underline;
+            transition: .10s;
+        }
+
+        .menu li {
+            float: left;
+            padding: 5%;
+
+        }
+
+        @media screen and (max-width:900px) {
+            ul li a {
+                font-size: 10px;
+            }
+        }
+    </style>
+</body>
+
+</html>

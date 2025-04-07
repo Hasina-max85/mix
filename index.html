@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <title>Beat Legends</title>
+</head>
+
+<body>
+    <nav class="navbar">
+       <div class="logo">beat legends</div>
+        <div class="nav-links">
+            <ul>
+                <li><a  href="corps.html#AVICII"><button>Avicii</button></a></li>
+                <li><a  href="corps.html#ALAN"><button>Alan Walker</button></a></li>
+                <li><a  href="corps.html#CHAIN"><button>Chainsmokers</button></a></li>
+                <li><a  href="corps.html#JONAS"><button>Jonas Blue</button></a></li>
+                <li><a  href="corps.html#KYGO"><button>Kygo</button></a></li>
+                <li><a  href="corps.html#MARSHE"><button>Marshemello</button></a></li>
+                <li><a  href="corps.html#MARTIN"><button>Martin Garrix</button></a></li>
+                <li><a  href="corps.html#ROBIN"><button>Robin Schulz</button></a></li>
+                <li>
+                    <a href="https://web.facebook.com/profile.php?id=61574770842458"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/thurnovah41086"><i class="fab fa-twitter"></i></a>
+                    <a href="http://www.youtube.com/@ThurnovahHASINA"><i class="fab fa-youtube"></i></a>
+
+                </li>
+            </ul>
+        </div>
+        </ul>
+
+        </div>
+        <img src="icons8-menu.svg" alt="menu" class="menu-hamburger">
+    </nav>
+
+    <header>
+   
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!--<div class="container">
+            <div class="wrapper">
+                <div class="wrapper-holder">
+                    <div id="slider-img-1"></div>
+                    <div id="slider-img-2"></div>
+                    <div id="slider-img-3"></div>
+                    <div id="slider-img-7"></div>
+                    <div id="slider-img-5"></div>
+                    <div id="slider-img-6"></div>
+                    <div id="slider-img-4"></div>
+                    <div id="slider-img-8"></div>
+                </div>
+            </div>
+            <div class="button-holder">
+                <a href="#slider-img-1" class="button"></a>
+                <a href="#slider-img-2" class="button"></a>
+                <a href="#slider-img-3" class="button"></a>
+                <a href="#slider-img-4" class="button"></a>
+                <a href="#slider-img-5" class="button"></a>
+                <a href="#slider-img-6" class="button"></a>
+                <a href="#slider-img-7" class="button"></a>
+                <a href="#slider-img-8" class="button"></a>
+            
+            </div>-->
+        </div>
+        <div class="section">
+        
+            <div class="image">
+            
+                <img src="profile-portrait-charming-pinkhaired-woman-600nw-1694234536.webp" class="taille">
+                
+            </div>
+        
+            
+            
+            <div class="animation">
+            
+                <h3>Music,<span class="auto-typing"></span></h3>
+                
+            </div>
+          
+            <div class="text">
+                
+            <h2>Welcome</h2>  
+<p>Are you passionate about electronic music, deep house, or EDM? Here, you will find the best mixes from the most famous DJs like Kygo, Alan Walker, Robin Schulz, and many more! Immerse yourself in a unique atmosphere where each artist has their own dedicated page, allowing you to easily find their sets and discover their latest creations.</p>
+
+            </div>
+    
+        </div>
+        <div class="animation">
+            <h3>La musique,<span class="auto-typing"></span></h3>
+        </div>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+            let typed =new Typed('.auto-typing',{
+                strings:[" is a force", "is an antidote to stress", "is an energy boost"],
+
+                typeSpeed:200,
+                loop:true,
+                fadeOut:true,
+        
+                fadeOutClass:'typed-fade-out',
+                fadeOutDelay:500,
+                Suffle:true
+            });
+        </script>
+
+
+
+
+<!--
+<div class="photoDj">
+
+
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 8</div>
+        <img src="57edb27d5c1a6e6ac7549bb23e082fd3.webp" style="width:100%">
+        <div class="text">Kygo</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 8</div>
+        <img src="robin.webp" style="width:100%">
+        <div class="text">Robin Schulz</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 8</div>
+        <img src="76645-alan-walker-music-dj-hd-4k.jpg" style="width:100%">
+        <div class="text">Alan Walker</div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 8</div>
+        <img src="avicii.webp" style="width:100%">
+        <div class="text">Avicii</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">5 / 8</div>
+        <img src="chainsmokers.webp" style="width:100%">
+        <div class="text">Chainsmokers</div>
+    </div>
+
+
+
+    <div class="mySlides fade">
+        <div class="numbertext">6 / 8</div>
+        <img src="jonas.webp" style="width:100%">
+        <div class="text">Jonas Blue</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">7 / 8</div>
+        <img src="martin.webp" style="width:100%">
+        <div class="text">Martin Garrix</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">8 / 8</div>
+        <img src="marshmello-monochrome-american-dj-black-background-5k-8k-3840x2160-422.jpg"
+            style="width:100%">
+        <div class="text">Marshemello</div>
+    </div>
+
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <span class="dot" onclick="currentSlide(8)"></span>
+</div>
+        -->
+
+
+
+    </header>
+    <style>
+       *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+       }
+
+
+       * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+        background-color: #717171;
+    }
+
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+
+    @media only screen and (max-width: 300px) {
+
+        .prev,
+        .next,
+        .text {
+            font-size: 11px
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .fa-facebook{
+    color:blue;
+ }
+ .fa-youtube{
+    color: #e04242;
+ }
+ .fa-twitter{
+    color: black;
+ }
+.fab:hover{
+    transition: .20s ease-in-out;
+    transform: scale(0.8);
+}
+
+
+        @keyframes bg-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.logo {
+    font-size:2em;
+    font-weight: bold;
+    color:white;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(90deg, #00c3ff, #ff00ff, #ff6600, #00ff99);
+
+    background-size: 300% 300%;
+    animation: bg-animation 4s infinite alternate;
+    clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+    border-radius: 5px;
+}
+
+        
+
+           
+        .navbar .nav-links ul li a{
+          
+          
+        
+            }
+            .navbar .nav-links ul li a button{
+                width:7.1vw;
+                background-image: linear-gradient(to right,#ff6e7f,#bfe9ff,#ff6e7f); 
+                background-size: 200%;
+                border-radius: 10px;
+                height: 6vh;
+                white-space:nowrap;
+                font-size:64%;
+        
+        
+            }
+            .navbar .nav-links ul li a button:hover{
+                cursor: pointer;
+                background-position:right;
+               /* background-image: linear-gradient(to left,#ff512f,#f09819,#ff512f);*/
+            
+                
+        
+            }
+        .auto-typing {
+
+    display: inline-block;
+    min-width: 250px; /* Ajuste selon la plus grande phrase */
+    text-align:left;
+}
+.animation{
+
+}
+        .animation h3{
+            color:rgb(255, 230, 0);
+            font-size:20px;
+            padding-left: 10%;
+            font-weight: 1000;
+            
+        
+        }
+        .section{
+            position:relative;
+            left: 2%;
+            top: 30%;
+            display: flex;
+            justify-content: space-between;
+            width: 50vw;
+            height: 50vh;
+            padding:2%;
+            padding: 20px;
+            gap: 20%;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            min-width:50%;
+        
+
+        }
+        .section img{
+            height: 40vh;
+            width: 20vw;
+            left: 1%;
+            border-radius: 30px;
+            position:relative;
+            margin-right:20%;
+            
+        }
+        .section .text{
+            color: white;
+            font-style: italic;
+            font-weight: 600;
+            min-width:25vw;
+            background: transparent;
+            backdrop-filter: blur(10px);
+            min-height: 25vh;
+            height: 32vh;
+    
+        }
+
+        .container {
+            position: absolute;
+            top: 20%;
+            align-items: center;
+            justify-content: center;
+            left: 80%;
+            min-width:100px;
+
+
+        }
+
+        .container .wrapper {
+            width: 17vw;
+            height: 60vh;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+            margin: 5rem auto;
+            overflow: hidden;
+
+        }
+
+        .container #slider-img-1 {
+            background-image: url(martin.webp);
+            background-position: center;
+            background-size: cover;
+            width: 17vw;
+            height: 61vh;
+            overflow: hidden;
+        }
+
+        .container #slider-img-2 {
+            background-image: url(avicii.webp);
+            background-position: center;
+            background-size: cover;
+            width: 17vw;
+            height: 61vh;
+            overflow: hidden;
+        }
+
+        .container #slider-img-3 {
+            background-image: url(robin.webp);
+            background-position: center;
+            background-size: cover;
+            width: 17vw;
+            height: 61vh;
+            overflow: hidden;
+        }
+
+        .container #slider-img-4 {
+            background-image: url(57edb27d5c1a6e6ac7549bb23e082fd3.webp);
+            background-position: center;
+            background-size: cover;
+            width: 17vw;
+            height: 61vh;
+            overflow: hidden;
+        }
+
+        .container #slider-img-5 {
+            background-image: url(alan.webp);
+            background-position:center;
+            background-size:cover;
+            width: 17vw;
+            height: 61vh;
+            overflow: hidden;
+        }
+
+        .container #slider-img-6 {
+            background-image: url(jonas.webp);
+            background-position:center;
+            background-size: cover;
+            width: 17vw;
+            height: 61vh;
+            overflow: hidden;
+        }
+
+        .container #slider-img-7 {
+            background-image: url(marshmello-monochrome-american-dj-black-background-5k-8k-3840x2160-422.jpg);
+            background-position:center;
+            background-size:cover;
+            width: 17vw;
+            height: 61vh;
+            overflow: hidden;
+        }
+        .container #slider-img-8 {
+            background-image: url(chainsmokers.webp);
+            background-position:center;
+            background-size:cover;
+            width: 17vw;
+            height: 61vh;
+        overflow: hidden
+            
+        }
+        
+        .container .wrapper-holder {
+            display:grid;
+            grid-template-columns: repeat(4, 100%);
+            height: 10vh;
+            width: 17vw;
+            padding-top:20px;
+            animation: slider 30s ease-in-out infinite alternate;
+        }
+ .container .button-holder .button {
+            background-color: white;
+            width: 15px;
+       
+            height: 15px;
+            border-radius: 15px;
+            display: inline-block;
+            margin: .3rem;
+        }
+
+        .container .button-holder {
+            position: absolute;
+            left: 0%;
+            bottom: 8%;
+
+        }
+        .container .wrapper:hover{
+            transform:translateY(-5%);
+            transition: .1000s ease-in-out;
+        }
+
+        .button:hover {
+            transform: scale(1.5);
+        }
+
+        @keyframes slider {
+            0% {
+                transform:translateX(0%);
+            }
+
+           10% {
+                transform:translateX(-100%);
+                transform: translate(-100%);
+            }
+
+            20% {
+                transform: translate(-200%);
+            }
+
+            30% {
+                transform: translate(-200%);
+            }
+
+            40% {
+                transform: translate(-300%);
+            }
+
+            50% {
+                transform: translateX(0%);
+            }
+
+            60% {
+                transform:translate3d(100%);
+            }
+
+            70% {
+                background-image: url(jonas.webp);
+            }
+
+            80% {
+                transform: translate(-100%);
+            
+            }
+
+            95% {
+                transform: translate(-100%);
+            }
+
+            100% {
+                transform: translate(0%);
+                
+            }
+        }
+
+
+        .block ul li a i {
+            display: block;
+            color: red;
+        }
+
+        .search {
+            position: absolute;
+            top: 40%;
+            z-index: 20;
+            display: block;
+            left: 5%;
+
+
+        }
+
+        .search-input {
+            font-size: 16px;
+            font-family: arial;
+            display: flex;
+            align-items: center;
+            border-radius: 30px;
+            width: 20vw;
+            height: 5vh;
+        }
+
+        .search-input:hover {
+            font-size: 18px;
+            font-family: arial;
+            display: flex;
+            align-items: center;
+            border-radius: 30px;
+            width: 25vw;
+            height: 6vh;
+            box-shadow: 0 0 6px white;
+        }
+
+        body {
+            font-family: arial;
+            width: 100vw;
+            height: 109vh;
+            background-image: url(wallpapers.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        header {
+            height: 100vh;
+            width: 100vw;
+            background-size: cover;
+            display: flex;
+        }
+
+        .navbar {
+            position: absolute;
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            box-sizing: border-box;
+            align-items: center;
+            background: transparent;
+            backdrop-filter: blur(300px);
+            z-index: 100;
+            overflow-y:auto;
+        }
+
+        .navbar a {
+            color: black;
+        }
+
+        .navbar .logo {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .navbar .nav-links ul {
+            display: flex;
+        }
+
+        .navbar .nav-links ul li  {
+            margin: 0 20px;
+        
+            
+        }
+
+        .navbar .nav-links ul li.active a {
+            color: #ed3c57;
+            font-weight: 600;
+        }
+
+        .navbar .menu-hamburger {
+            position: relative;
+            top: 40%;
+            right: 0%;
+            width: 30px;
+            display: none;
+            cursor: pointer;
+        }
+
+        .navbar .menu-hamburger:hover {
+            transform: scale(0.9);
+        }
+
+        @media screen and (max-width:900px) {
+            .navbar .nav-links ul li a button:hover{
+                cursor: pointer;
+                background-image:none;
+            
+                
+        
+            }
+          
+            .container .button-holder .button{
+          display: none;
+            }
+            button{
+                border: none;
+                width: 20vw;
+                height: 6vh;
+        
+            }
+            
+            .navbar .nav-links ul li a button{
+            
+                background: transparent;
+            }
+            
+            .navbar .nav-links ul li a button:hover{
+              color: #ff6e7f;
+              font-size: 20px;
+            }
+            .animation h3{
+                font-size: 12px;
+            }
+
+            .section{
+            position: absolute;
+            left: 2%;
+            top: 30%;
+            display: flex;
+            justify-content: space-between;
+            width: 50vw;
+            height: 20vh;
+            padding:2%;
+            padding: 20px;
+        
+            
+
+        }
+        .section img{
+            height: 40vh;
+            width: 20vw;
+            left: 5%;
+            border-radius: 30px;
+            
+        }
+        .section .text{
+            color: white;
+            font-style: italic;
+            font-weight: 600;
+            font-size: 10px;
+            height: 20vh;
+        }
+
+            .navbar {
+                padding: 0;
+            }
+
+            .navbar .menu-hamburger {
+                display: block;
+            }
+
+            .nav-links {
+                top: 0;
+                left: 0;
+                position: absolute;
+                width: 100%;
+                height: 109vh;
+                background-color: rgba(255, 255, 255, 0.20);
+                backdrop-filter: blur(3px);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: -100%;
+                transition: all 0.5s ease;
+            }
+
+            .nav-links ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+            }
+
+            .navbar .nav-links ul li {
+                margin: 10px 0;
+                font-size: 1.2em;
+            }
+
+            .navbar .nav-links ul li a .button{
+            background: none;
+            }
+
+            .navbar {
+                overflow: visible;
+                padding: 0;
+            
+            }
+
+            .navbar-logo {
+                position: absolute;
+                top: 50px;
+                left: 50px;
+            }
+
+            .nav-links.mobile-menu {
+                margin-left: 0;
+            }
+        }
+    </style>
+
+    <script>
+        const monfonctionHamburger = document.querySelector(".menu-hamburger");
+        const Monnavlinks = document.querySelector(".nav-links");
+
+        monfonctionHamburger.addEventListener('click', () => {
+            Monnavlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+
+</html>

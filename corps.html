@@ -1,0 +1,2839 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+
+    <title>My Mix</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h4> My mix
+
+                    &#127926
+                    &#127926
+
+                </h4>
+            
+           <li class="youtubelink">Subscribe<a href="https://www.youtube.com/@ThurnovahHASINA"><i class="fas fa-bell"></i></a></li>
+           <span class="auto-typing"><h5></h5></span>
+            </div>
+            <ul class="links">
+               
+                <li class="action_btn">Follow on</li>
+                <li><a href="https://web.facebook.com/profile.php?id=61574770842458"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+            </ul>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="dropdown_menu open">
+                <li class="action_btn">Follow on</li>
+                <li><a href="https://web.facebook.com/profile.php?id=61574770842458"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                
+
+            </div>
+        </div>
+    </header>
+    <div class="contenu">
+
+        <div class="photoDj">
+
+
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 8</div>
+                    <img src="57edb27d5c1a6e6ac7549bb23e082fd3.webp" style="width:100%">
+                    <div class="text">Kygo</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 8</div>
+                    <img src="robin.webp" style="width:100%">
+                    <div class="text">Robin Schulz</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 8</div>
+                    <img src="76645-alan-walker-music-dj-hd-4k.jpg" style="width:100%">
+                    <div class="text">Alan Walker</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 8</div>
+                    <img src="avicii.webp" style="width:100%">
+                    <div class="text">Avicii</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 8</div>
+                    <img src="chainsmokers.webp" style="width:100%">
+                    <div class="text">Chainsmokers</div>
+                </div>
+
+
+
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 8</div>
+                    <img src="jonas.webp" style="width:100%">
+                    <div class="text">Jonas Blue</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">7 / 8</div>
+                    <img src="martin.webp" style="width:100%">
+                    <div class="text">Martin Garrix</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">8 / 8</div>
+                    <img src="marshmello-monochrome-american-dj-black-background-5k-8k-3840x2160-422.jpg"
+                        style="width:100%">
+                    <div class="text">Marshemello</div>
+                </div>
+
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+            </div>
+
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = slides.length }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                }
+            </script>
+
+
+        </div>
+        <div class="videoPlayer">
+            <div class="barredeRecherche">
+                <div class="box">
+                    <h1></h1>
+                    <form method="POST">
+                        <input type="text" name="" placeholder="Search......" id="mySearch" onkeyup="filterVideos()">
+                        <input type="submit" name="" value="Search">
+
+                        <script>
+                            function filterVideos() {
+                                let input = document.getElementById("mySearch").value.toUpperCase();
+                                let videos = document.querySelectorAll(".vid");
+
+                                videos.forEach(video => {
+                                    let title = video.querySelector("h6.title,iframe.title").innerText.toUpperCase();
+                                    if (title.includes(input)) {
+                                        video.style.display = "block";
+                                    } else {
+                                        video.style.display = "none";
+                                    }
+                                });
+                            }
+
+                            document.getElementById("searchForm").addEventListener("submit", function (event) {
+                                event.preventDefault(); // Empêche le rechargement de la page
+
+                                let input = document.getElementById("mySearch").value.toUpperCase();
+                                let videos = document.querySelectorAll(".vid,iframe");
+                                let found = false;
+
+                                videos.forEach(video => {
+                                    let title = video.querySelector("h6.title,iframe.title,").innerText.toUpperCase();
+                                    let videoContainer = document.getElementById("videoContainer");
+
+                                    if (title.includes(input) && !found) {
+                                        found = true;
+                                        videoContainer.innerHTML = ""; // Effacer la vidéo actuelle
+
+                                        let videoElement = video.querySelector("video, iframe").cloneNode(true);
+                                        videoElement.setAttribute("controls", "true");
+
+                                        videoContainer.appendChild(videoElement);
+                                    }
+                                });
+
+                                if (!found) {
+                                    alert("Vidéo non trouvée !");
+                                }
+                            });
+                        </script>
+                         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+                         <script>
+                             let typed =new Typed('.auto-typing',{
+                                 strings:["Follow on Youtube Please"],
+                 
+                                 typeSpeed:200,
+                                 loop:true,
+                                 fadeOut:true,
+                                 gabCursor:0,
+                                 fadeOutClass:'typed-fade-out',
+                                 fadeOutDelay:500,
+                                 Suffle:true
+                             });
+                         </script>
+                    </form>
+                </div>
+            </div>
+            <div class="container">
+                <div class="main-video">
+                    <div class="video">
+                        <video src="BEST_KYGO_MIX_[SUMMER_2015](360p).mp4" controls muted autoplay></video>
+                        <h3 class="title">BEST_KYGO_MIX_[SUMMER_2015](360p).mp4</h3>
+
+                    </div>
+                </div>
+                <div class="video-list">
+                    <div class="vid active">
+                        <video src=""></video>
+                        <h6 class="title"></h6>
+
+                    </div>
+                    <div class="vid">
+                        <video src="kygO.mp4"></video>
+                        <h6 class="title">KYGO Mix 2025 Tropical House</h6>
+
+                    </div>
+                    <div class="vid">
+                        <video src="Kygo_Mix___Best_Remixes___Mashups(160).mp4"></video>
+                        <h6 class="title">Kygo_Mix___Best_Remixes___Mashups(160).mp4</h6>
+
+                    </div>
+
+
+                    <div class="vid">
+                        <iframe width="100px" height="100px" src="">
+
+                        </iframe>
+                        <h6 class="title"></h6>
+                    </div>
+                    <div class="vid">
+                        <iframe width="" height="" src="">
+
+                        </iframe>
+                        <h6 class="title"></h6>
+                    </div>
+                    <div class="vid">
+                        <iframe width=" 560" height="315"
+                        src="https://www.youtube.com/embed/ZnhjSTol0PE?si=jZxGL4OLGjfsZcrk" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <video src="" muted></video>
+                        <h6 class="title"></h6>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/6vH3w41_70E?si=uTBBFLlM9IbUFTWd"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/UWlVxXHdgkk?si=kYJ1PcdV_cMMaMHo"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/0qj-nyENzFU?si=H3JxmXSiMhRXKlj2"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/bQy9t78fG50?si=KkmgnBTLlYWiSGkg"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/tUNbhYcY9Ik?si=e4PqVd9tlTsoYtG-"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <video src="Kygo_Mix___Best_Remixes___Mashups(160).mp4"></video>
+                        <h6 class="title"></h6>
+                    </div>
+                    <div class="vid">
+                        <video src="Kygo_Mix___Best_Remixes___Mashups(160).mp4"></video>
+                        <h6 class="title"></h6>
+                    </div>
+                    <div class="vid">
+                        <iframe width="100px" height="100px" src="">
+
+                        </iframe>
+                        <h6 class="title"></h6>
+                    </div>
+                    <div class="vid">
+                        <iframe width="" height="" src="">
+
+                        </iframe>
+                        <h6 class="title"></h6>
+                    </div>
+                    <div class="vid">
+                        <iframe width="100px" height="100px" src="">
+
+                        </iframe>
+                        <h6 class="title"></h6>
+                    </div>
+                    <div class="vid">
+                        <iframe width="" height="" src="">
+
+                        </iframe>
+                        <h6 class="title"></h6>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/LVcNkrazGw0?si=MSLUD2cNhxB1movV"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/tazB8uZAu6Q?si=WDoe1XoLJVnOKzi-"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/hQPhSlDLjzM?si=jfFn8oNAY1FfvcL7"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/p84y1ng1hwg?si=yRxkUHxmQc7xgmoT"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/RFkE8GIJHp8?si=tY7BP3o_Ig2q7zim"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/xfgBijPAR6s?si=C8rbscUsBsdUo9mR"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/xfgBijPAR6s?si=EXxejVl_jlvnuw6T"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/zWUhQeq6F1A?si=a-Gd_KMtwOOkG0pu"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/Mm39fuBxntA?si=EnRNuxalWVbtpQ5M"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/MQzCP6yecDU?si=GrltNJ56JZXkwvgj"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/l5Wsf63y5Jc?si=sAK9ccbfoN51nlrx"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/jxxF7Vzqpx4?si=1YbIZXYICteQPwNo"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/4P_XIA5mJwM?si=_f9JoDpWUv7ek_R5"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/_5F0XvRYO3Q?si=Cpt6f7kgSFUUwoYJ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="vid">
+                        <video src="Kygo_Mix___Best_Remixes___Mashups(160).mp4"></video>
+                        <h6 class="title"></h6>
+                    </div>
+                    <div class="vid">
+                        <video src="Kygo_Mix___Best_Remixes___Mashups(160).mp4"></video>
+                        <h6 class="title"></h6>
+                    </div>
+                    <div class="vid">
+                        <video src="Kygo_Mix___Best_Remixes___Mashups(160).mp4"></video>
+                        <h6 class="title"></h6>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/zkElMxlRpjg?si=3AMyVcHjMwGJtjj-"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                        <h6 class="title"></h6>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/videoseries?si=HnVaJXzjsorIq7PR&amp;list=PL2wWow_Z51UJJB_sqeiCh8ZMFYfx9whp5"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <h6 class="title"></h6>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/ApzwBvVWISM?si=0AIYEBcJBggMdhpD"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/gHyRsxPr-cg?si=EcJj5RiObawZPmCe"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/n2Zue_TQqvc?si=1SKj9PsPWmxoCRUF"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/o3YadwGH0ZA?si=x6AipOnsXPSu0tgd"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/d1HEWBtOXog?si=33BosC85UmZbSbHU"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/w3qFJjirUUQ?si=2wLTOOl07Jz8FuF6"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/bs6EtdcEjaA?si=02xfxIhb2hBjI_zv"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/-OSs746YI90?si=Ggk3btYOBG_u0u6_"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/d2sef_cwXZE?si=I_veuHbPBWG7EMFY"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/8plH_V_rKAM?si=fBOBoWZZiLMK-1iq"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="vid">
+                        <video src=""></video>
+                        <h6 class="title"></h6>
+                    </div>
+                    <div class="vid">
+                        <video src=""></video>
+                        <h6 class="title"></h6>
+                    </div>
+                    <div class="vid">
+                        <video src=""></video>
+                        <h6 class="title"></h6>
+                    </div>
+                    <div class="vid">
+                        <iframe width="100px" height="100px"
+                            src="https://www.youtube.com/embed/videoseries?si=HnVaJXzjsorIq7PR&amp;list=PL2wWow_Z51UJJB_sqeiCh8ZMFYfx9whp5">
+
+                        </iframe>
+                        <h6 class="title"></h6>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/fzN19mE9Zso?si=ibbujjKv6YLHO3md"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                        <h6 class="title"></h6>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/WymGA6Tuq1k?si=l92QjhjY4CrgxgQD"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                        <h6 class="title"></h6>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/FrJNiWPCHR4?si=U2LwQqhdUqDfZ5Pl"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                        <h6 class="title"></h6>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/nIi3uNHaglw?si=0awilUxM3tkQNHQ-"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <h6 class="title"></h6>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/nIi3uNHaglw?si=rdVB-rN1AFS5nScp"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <h6 class="title"></h6>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/BHnDX0nv2rk?si=PF86Fzo3sonesKgd"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+                        <h6 class="title"></h6>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/gYrjTLVfJyM?si=dUYP-wyAchdVu0O1"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/ha5Xm1GkX60?si=YLT8wuN2qBs-CSYs"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/Dg2xzaq6sDU?si=uGGEUegJD5ZP2aKZ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/zGYJiftJ9Qs?si=LnIrRmnhKLKpqxep"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/U935BSVJIM0?si=h4lRrLlSxPp4gfO5"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/MtoLnY9F9D0?si=jaJwocu4klBoaYmp"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/jlQ2hs0EANo?si=JT65NKw2tVfwyvp6"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/oi5WdOhDV_E?si=qVsqmlovGCN5hp5d"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/AgUwMJKnCzk?si=5s2UdaRMQoudYQjN"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/gl9f04k-_Rc?si=t8sKP8iHBH1Con8Q"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/eteroVASrqU?si=JjSFSJhQ3XSpPwxl"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/kcDdYIsuLs4?si=0X7Sj8jjfeZ0SOTM"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/_pvFxnU8tsg?si=cFd4lXiLvwAFD8ZR"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/jd-8R9w7wG4?si=MiIgRzcA1xYc29JN"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/aAjdisQy6BY?si=iYrrgTqJVSj9oIxb"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/FOOf-ci8J38?si=N7LlDl9-hFcwBd9w"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/_ZDZM4Q8fIQ?si=rxehRdKO4RZw8yVA"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/lrTqHkm9xxc?si=p9rXR-gicmee3d5Y"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/wSVwoZZb35I?si=y_kihH0EIvTgIzJs"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="vid">
+                        <video src=""></video>
+                        <h6 class="title"></h6>
+                    </div>
+                    <div class="vid">
+                        <video src=""></video>
+                        <h6 class="title"></h6>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/7rgNBcP0au0?si=bOhIbacQCoOUeHJb"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/jLM3fQImfcU?si=YbyWvjw5WIebg6qs"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <video src=""></video>
+                        <h6 class="title"></h6>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/7rgNBcP0au0?si=SIsTgK-TmobuRvFj"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <h6 class="title"></h6>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/jLM3fQImfcU?si=dNZnqdMS1tof1MSh"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <h6 class="title"></h6>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/ojs6k0iSqt4?si=LrjE-IaB65vF5M_o"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/eYYG083bInI?si=7w9qy7dZC_MOK3nA"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/R3FVtjoTRhc?si=mz2KzdLV0LmdRkk5"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/xPfpUcnKico?si=9qCr1bboV5yETaT9"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/YjYjrd_ozQw?si=ukRqrqudH9r7WkAR"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/JS6uhdQJo4A?si=0moI-zDZBA3KXGlJ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/lX2lWHXFpZU?si=NSG6jVJNlbdybmiT"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/FKvPHeqGlPU?si=LlrhmCvTg9GSYP1l"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/fQb_JaH2GQw?si=CnE8cinmgdAE3j9V"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/rIZKFfFZCKk?si=6hdWJ0fyXCADlQOS"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/liSxZJhaudI?si=rqJPnlMmcDdfhF8r"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/N36chN7a-aU?si=cCfYdSrJxku34Z_9"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/jUAzdlntyY4?si=tkLt6htnO_9N1esO"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/vPUp5pzh8Mc?si=h6WSU2ZSfsZe-hYb"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/PJxxfilLnGI?si=wPK2bhi6f0m9hzwE"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/l84HL_serLw?si=UyVreryRZNkLA5qm"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/MlemJriyLPY?si=xgp-TAjQlG_qE63i"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/HGD49l4PvzE?si=FMzCvG3h9Ot8JMUf"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/su9v00SsILU?si=a_FtmXWW39-rwQhc"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <video src=""></video>
+                        <h6 class="title"></h6>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/mdsxgPuih78?si=PdnjkM4QFT-2ddFk"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/m7ZAtKMgpAg?si=WTqz5IEtJoMexTHg"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+                    </div>
+                    <div class="vid">
+                        <video src=""></video>
+                        <h6 class="title"></h6>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/8eXFvzMEldk?si=F-JtofcxIqW5B0Nn"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/INWi8qg2dpU?si=O3nVUI9b18JZcoz-"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/8VpkwoDBQSo?si=0Nn3XCAtK5TrRV6W"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/ONcbnMX05Y0?si=BVUMH_nfSmm-haOP"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/R75AFoBPBVs?si=l5SMXmDtRwdKmM2H"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/wR-4NsUMT48?si=Lr7r8eDIplromo7J"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="vid">
+                        <video
+                            src="Marshmello_Greatest_Hits___Marshmello_Best_Songs_Of_All_Time___New_Playlist_2024___Pop_Song_2024(144p).mp4"
+                            muted></video>
+                        <h6 class="title">
+
+                        </h6>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/pEzMrCDk7Bo?si=GZIiQxDudxAAYTRQ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <video src=""></video>
+                        <h6 class="title"></h6>
+                    </div>
+                    <div class="vid">
+                        <iframe width="100px" height="100px" src="">
+
+                        </iframe>
+                        <h6 class="title"></h6>
+                    </div>
+                    <div class="vid">
+                        <iframe width="" height="" src="">
+
+                        </iframe>
+                        <h6 class="title"></h6>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/QGme-DHrsYY?si=BAL0btq-1j3tT6LE"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/bwfraJzeJuc?si=5lZ2-9Hd7SaKGb6c"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/J5r3259a8I8?si=iRXMt4zLFX4kvCZD"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/WE8aGmSAobs?si=m2ROQKfH7X34xQPr"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/ZqPRTJGl6sk?si=Wbqz8g_Bf1J2OCHw"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/CKg4WARv_hA?si=Qwb8RI4ErU1tPEKL"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <video src=""></video>
+                        <h6 class="title"></h6>
+                    </div>
+                    <div class="vid">
+                        <video src=""></video>
+                        <h6 class="title"></h6>
+                    </div>
+                    <div class="vid">
+                        <iframe width="100px" height="100px" src="">
+
+                        </iframe>
+                        <h6 class="title"></h6>
+                    </div>
+                    <div class="vid">
+                        <iframe width="" height="" src="">
+
+                        </iframe>
+                        <h6 class="title"></h6>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/7Xc2fgYfux0?si=fjascwQ53oocoO7r"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/SJeVUV3MVOU?si=wVdqtiOEOJ_xIf38"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/pdvwf0a0lpQ?si=fyPNgXOohLeHqwg0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/bZWgTjvRoM8?si=7ZNWiA39U8VOGmxg"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/KQBhtAwGDuw?si=9BDazoPa772i6_iZ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/Tv9xK77LyHg?si=-agMiWW6aHA8NiPS"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <video src=""></video>
+                        <h6 class="title"></h6>
+                    </div>
+                    <div class="vid">
+                        <video src=""></video>
+                        <h6 class="title"></h6>
+
+                    </div>
+                    <div class="vid">
+                        <iframe width="100px" height="100px" src="">
+
+                        </iframe>
+                        <h6 class="title"></h6>
+                    </div>
+                    <div class="vid">
+                        <iframe width="" height="" src="">
+
+                        </iframe>
+                        <h6 class="title"></h6>
+                    </div>
+
+
+
+                </div>
+                <div class="video-list">
+                    <div class="all">
+                        <div class="kygo" id="KYGO"><span><button>Kygo</button></span>
+                            <div class="div">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/ZnhjSTol0PE?si=jZxGL4OLGjfsZcrk"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <video src="" muted></video>
+                                <h6 class="title"></h6>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/6vH3w41_70E?si=uTBBFLlM9IbUFTWd"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/UWlVxXHdgkk?si=kYJ1PcdV_cMMaMHo"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/0qj-nyENzFU?si=H3JxmXSiMhRXKlj2"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/bQy9t78fG50?si=KkmgnBTLlYWiSGkg"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/tUNbhYcY9Ik?si=e4PqVd9tlTsoYtG-"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <video src="Kygo_Mix___Best_Remixes___Mashups(160).mp4"></video>
+                                <h6 class="title"></h6>
+                            </div>
+                            <div class="vid">
+                                <video src="Kygo_Mix___Best_Remixes___Mashups(160).mp4"></video>
+                                <h6 class="title"></h6>
+                            </div>
+                            <div class="vid">
+                                <iframe width="100px" height="100px" src="">
+
+                                </iframe>
+                                <h6 class="title"></h6>
+                            </div>
+                            <div class="vid">
+                                <iframe width="" height="" src="">
+
+                                </iframe>
+                                <h6 class="title"></h6>
+                            </div>
+                            <div class="vid">
+                                <iframe width="100px" height="100px" src="">
+
+                                </iframe>
+                                <h6 class="title"></h6>
+                            </div>
+                            <div class="vid">
+                                <iframe width="" height="" src="">
+
+                                </iframe>
+                                <h6 class="title"></h6>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/LVcNkrazGw0?si=MSLUD2cNhxB1movV"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/tazB8uZAu6Q?si=WDoe1XoLJVnOKzi-"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+
+                        </div>
+                        <div class="avicii" id="AVICII">
+                            <span><button>Avicii</button></span>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/hQPhSlDLjzM?si=jfFn8oNAY1FfvcL7"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/p84y1ng1hwg?si=yRxkUHxmQc7xgmoT"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/RFkE8GIJHp8?si=tY7BP3o_Ig2q7zim"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/xfgBijPAR6s?si=C8rbscUsBsdUo9mR"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/xfgBijPAR6s?si=EXxejVl_jlvnuw6T"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/zWUhQeq6F1A?si=a-Gd_KMtwOOkG0pu"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/Mm39fuBxntA?si=EnRNuxalWVbtpQ5M"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/MQzCP6yecDU?si=GrltNJ56JZXkwvgj"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/l5Wsf63y5Jc?si=sAK9ccbfoN51nlrx"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/jxxF7Vzqpx4?si=1YbIZXYICteQPwNo"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/4P_XIA5mJwM?si=_f9JoDpWUv7ek_R5"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/_5F0XvRYO3Q?si=Cpt6f7kgSFUUwoYJ"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+
+                            <div class="vid">
+                                <video src="Kygo_Mix___Best_Remixes___Mashups(160).mp4"></video>
+                                <h6 class="title"></h6>
+                            </div>
+                            <div class="vid">
+                                <video src="Kygo_Mix___Best_Remixes___Mashups(160).mp4"></video>
+                                <h6 class="title"></h6>
+                            </div>
+                            <div class="vid">
+                                <video src="Kygo_Mix___Best_Remixes___Mashups(160).mp4"></video>
+                                <h6 class="title"></h6>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/zkElMxlRpjg?si=3AMyVcHjMwGJtjj-"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                                <h6 class="title"></h6>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/videoseries?si=HnVaJXzjsorIq7PR&amp;list=PL2wWow_Z51UJJB_sqeiCh8ZMFYfx9whp5"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <h6 class="title"></h6>
+                            </div>
+
+
+                        </div>
+                        <div class="martin" id="MARTIN">
+                            <span>
+                                <button>
+                                    Martin Garrix
+                                </button>
+                            </span>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/ApzwBvVWISM?si=0AIYEBcJBggMdhpD"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/gHyRsxPr-cg?si=EcJj5RiObawZPmCe"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/n2Zue_TQqvc?si=1SKj9PsPWmxoCRUF"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/o3YadwGH0ZA?si=x6AipOnsXPSu0tgd"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/d1HEWBtOXog?si=33BosC85UmZbSbHU"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/w3qFJjirUUQ?si=2wLTOOl07Jz8FuF6"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/bs6EtdcEjaA?si=02xfxIhb2hBjI_zv"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/-OSs746YI90?si=Ggk3btYOBG_u0u6_"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/d2sef_cwXZE?si=I_veuHbPBWG7EMFY"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/8plH_V_rKAM?si=fBOBoWZZiLMK-1iq"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+
+                            <div class="vid">
+                                <video src=""></video>
+                                <h6 class="title"></h6>
+                            </div>
+                            <div class="vid">
+                                <video src=""></video>
+                                <h6 class="title"></h6>
+                            </div>
+                            <div class="vid">
+                                <video src=""></video>
+                                <h6 class="title"></h6>
+                            </div>
+                            <div class="vid">
+                                <iframe width="100px" height="100px"
+                                    src="https://www.youtube.com/embed/videoseries?si=HnVaJXzjsorIq7PR&amp;list=PL2wWow_Z51UJJB_sqeiCh8ZMFYfx9whp5">
+
+                                </iframe>
+                                <h6 class="title"></h6>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/fzN19mE9Zso?si=ibbujjKv6YLHO3md"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                                <h6 class="title"></h6>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/WymGA6Tuq1k?si=l92QjhjY4CrgxgQD"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                                <h6 class="title"></h6>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/FrJNiWPCHR4?si=U2LwQqhdUqDfZ5Pl"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                                <h6 class="title"></h6>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/nIi3uNHaglw?si=0awilUxM3tkQNHQ-"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <h6 class="title"></h6>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/nIi3uNHaglw?si=rdVB-rN1AFS5nScp"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <h6 class="title"></h6>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/BHnDX0nv2rk?si=PF86Fzo3sonesKgd"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+                                <h6 class="title"></h6>
+                            </div>
+
+                        </div>
+                        <div class="alan" id="ALAN">
+                            <span><button>Alan Walker</button></span>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/gYrjTLVfJyM?si=dUYP-wyAchdVu0O1"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/ha5Xm1GkX60?si=YLT8wuN2qBs-CSYs"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/Dg2xzaq6sDU?si=uGGEUegJD5ZP2aKZ"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/zGYJiftJ9Qs?si=LnIrRmnhKLKpqxep"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/U935BSVJIM0?si=h4lRrLlSxPp4gfO5"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/MtoLnY9F9D0?si=jaJwocu4klBoaYmp"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/jlQ2hs0EANo?si=JT65NKw2tVfwyvp6"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/oi5WdOhDV_E?si=qVsqmlovGCN5hp5d"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/AgUwMJKnCzk?si=5s2UdaRMQoudYQjN"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/gl9f04k-_Rc?si=t8sKP8iHBH1Con8Q"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/eteroVASrqU?si=JjSFSJhQ3XSpPwxl"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/kcDdYIsuLs4?si=0X7Sj8jjfeZ0SOTM"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/_pvFxnU8tsg?si=cFd4lXiLvwAFD8ZR"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/jd-8R9w7wG4?si=MiIgRzcA1xYc29JN"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/aAjdisQy6BY?si=iYrrgTqJVSj9oIxb"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/FOOf-ci8J38?si=N7LlDl9-hFcwBd9w"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/_ZDZM4Q8fIQ?si=rxehRdKO4RZw8yVA"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/lrTqHkm9xxc?si=p9rXR-gicmee3d5Y"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/wSVwoZZb35I?si=y_kihH0EIvTgIzJs"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+
+                            <div class="vid">
+                                <video src=""></video>
+                                <h6 class="title"></h6>
+                            </div>
+                            <div class="vid">
+                                <video src=""></video>
+                                <h6 class="title"></h6>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/7rgNBcP0au0?si=bOhIbacQCoOUeHJb"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/jLM3fQImfcU?si=YbyWvjw5WIebg6qs"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <video src=""></video>
+                                <h6 class="title"></h6>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/7rgNBcP0au0?si=SIsTgK-TmobuRvFj"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <h6 class="title"></h6>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/jLM3fQImfcU?si=dNZnqdMS1tof1MSh"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <h6 class="title"></h6>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/ojs6k0iSqt4?si=LrjE-IaB65vF5M_o"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/eYYG083bInI?si=7w9qy7dZC_MOK3nA"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+
+                        </div>
+                        <div class="robin" id="ROBIN">
+                            <span><button>Robin Schulz</button></span>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/R3FVtjoTRhc?si=mz2KzdLV0LmdRkk5"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/xPfpUcnKico?si=9qCr1bboV5yETaT9"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/YjYjrd_ozQw?si=ukRqrqudH9r7WkAR"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/JS6uhdQJo4A?si=0moI-zDZBA3KXGlJ"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/lX2lWHXFpZU?si=NSG6jVJNlbdybmiT"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/FKvPHeqGlPU?si=LlrhmCvTg9GSYP1l"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/fQb_JaH2GQw?si=CnE8cinmgdAE3j9V"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/rIZKFfFZCKk?si=6hdWJ0fyXCADlQOS"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/liSxZJhaudI?si=rqJPnlMmcDdfhF8r"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/N36chN7a-aU?si=cCfYdSrJxku34Z_9"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/jUAzdlntyY4?si=tkLt6htnO_9N1esO"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/vPUp5pzh8Mc?si=h6WSU2ZSfsZe-hYb"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/PJxxfilLnGI?si=wPK2bhi6f0m9hzwE"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/l84HL_serLw?si=UyVreryRZNkLA5qm"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/MlemJriyLPY?si=xgp-TAjQlG_qE63i"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/HGD49l4PvzE?si=FMzCvG3h9Ot8JMUf"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/su9v00SsILU?si=a_FtmXWW39-rwQhc"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <video src=""></video>
+                                <h6 class="title"></h6>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/mdsxgPuih78?si=PdnjkM4QFT-2ddFk"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/m7ZAtKMgpAg?si=WTqz5IEtJoMexTHg"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+                            </div>
+                            <div class="vid">
+                                <video src=""></video>
+                                <h6 class="title"></h6>
+                            </div>
+                        </div>
+                        <div class="marshemello" id="MARSHE">
+                            <span><button>Marshemello</button></span>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/8eXFvzMEldk?si=F-JtofcxIqW5B0Nn"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/INWi8qg2dpU?si=O3nVUI9b18JZcoz-"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/8VpkwoDBQSo?si=0Nn3XCAtK5TrRV6W"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/ONcbnMX05Y0?si=BVUMH_nfSmm-haOP"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/R75AFoBPBVs?si=l5SMXmDtRwdKmM2H"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/wR-4NsUMT48?si=Lr7r8eDIplromo7J"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+
+                            <div class="vid">
+                                <video
+                                    src="Marshmello_Greatest_Hits___Marshmello_Best_Songs_Of_All_Time___New_Playlist_2024___Pop_Song_2024(144p).mp4"
+                                    muted></video>
+                                <h6 class="title">
+
+                                </h6>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/pEzMrCDk7Bo?si=GZIiQxDudxAAYTRQ"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <video src=""></video>
+                                <h6 class="title"></h6>
+                            </div>
+                            <div class="vid">
+                                <iframe width="100px" height="100px" src="">
+
+                                </iframe>
+                                <h6 class="title"></h6>
+                            </div>
+                            <div class="vid">
+                                <iframe width="" height="" src="">
+
+                                </iframe>
+                                <h6 class="title"></h6>
+                            </div>
+
+                        </div>
+                        <div class="chainsmokers" id="CHAIN">
+                            <span>
+                                <button>
+                                    Chainsmokers
+                                </button>
+                            </span>v
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/QGme-DHrsYY?si=BAL0btq-1j3tT6LE"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/bwfraJzeJuc?si=5lZ2-9Hd7SaKGb6c"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/J5r3259a8I8?si=iRXMt4zLFX4kvCZD"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/WE8aGmSAobs?si=m2ROQKfH7X34xQPr"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/ZqPRTJGl6sk?si=Wbqz8g_Bf1J2OCHw"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/CKg4WARv_hA?si=Qwb8RI4ErU1tPEKL"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <video src=""></video>
+                                <h6 class="title"></h6>
+                            </div>
+                            <div class="vid">
+                                <video src=""></video>
+                                <h6 class="title"></h6>
+                            </div>
+                            <div class="vid">
+                                <iframe width="100px" height="100px" src="">
+
+                                </iframe>
+                                <h6 class="title"></h6>
+                            </div>
+                            <div class="vid">
+                                <iframe width="" height="" src="">
+
+                                </iframe>
+                                <h6 class="title"></h6>
+                            </div>
+
+                        </div>
+                        <div class="jonas" id="JONAS">
+                            <span>
+                                <button>
+                                    Jonas blue
+                                </button>
+                            </span>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/7Xc2fgYfux0?si=fjascwQ53oocoO7r"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/SJeVUV3MVOU?si=wVdqtiOEOJ_xIf38"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/pdvwf0a0lpQ?si=fyPNgXOohLeHqwg0"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/bZWgTjvRoM8?si=7ZNWiA39U8VOGmxg"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/KQBhtAwGDuw?si=9BDazoPa772i6_iZ"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/Tv9xK77LyHg?si=-agMiWW6aHA8NiPS"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="vid">
+                                <video src=""></video>
+                                <h6 class="title"></h6>
+                            </div>
+                            <div class="vid">
+                                <video src=""></video>
+                                <h6 class="title"></h6>
+
+                            </div>
+                            <div class="vid">
+                                <iframe width="100px" height="100px" src="">
+
+                                </iframe>
+                                <h6 class="title"></h6>
+                            </div>
+                            <div class="vid">
+                                <iframe width="" height="" src="">
+
+                                </iframe>
+                                <h6 class="title"></h6>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+
+<script>
+    let listVideo = document.querySelectorAll('.vid,.vid iframe');
+    let mainVideo = document.querySelector('.main-video video');
+    let title = document.querySelector('.main-video .title,.vid iframe.title');
+    listVideo.forEach(video => {
+        video.onclick = () => {
+            listVideo.forEach(vid => vid.classList.remove('active'));
+            video.classList.add('active');
+            if (video.classList.contains('active')) {
+                let src = video.children[0].getAttribute('src');
+                mainVideo.src = src;
+                let text = video.children[1].innerHTML;
+                title.innerHTML = text;
+            };
+        };
+    });
+</script>
+
+<script>
+    const toggleBtn = document.querySelector('.toggle-btn')
+    const toggleBtnIcon = document.querySelector('.toggle-btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+        toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+    }
+</script>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    .logo .auto-typing{
+        color:whitesmoke;
+        font-weight: 800;
+        font-size: 12px;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2%;
+    }
+.logo{
+display:flex;
+gap:70px;
+}
+.logo .youtubelink{
+border-radius:20px;
+background-color:rgb(245, 22, 22);
+transition:.50s ease-in-out;
+width:auto;
+color: white;
+align-items:center;
+justify-content: center;
+outline:none;
+margin:5px;
+padding:2px;
+}
+.logo .youtubelink a:hover{
+cursor:pointer;
+transform:scale(0.8);
+transition:.20s ease-in-out;
+animation:step-end;
+}
+.logo .youtubelink a i{
+transition:.100s ease-in-out;
+animation:translation 5s linear infinite;
+animation-duration: 5s;
+color:yellow;
+
+}
+.logo .youtubelink a i:hover{
+    animation: step-end;
+}
+.logo .youtubelink a i:visited{
+    animation:steps(0);
+}
+@keyframes translation{
+0%{
+transform:rotate(-10deg);
+
+}
+10%{
+    transform: rotate(10deg);
+}
+20%{
+    transform: rotate(-22deg);
+}
+30%{
+    transform: rotate(0);
+}
+40%{
+    transform: rotate(0);
+}
+50%{
+    transform: rotate(22deg);
+}
+60%{
+    transform: rotate(-22deg);
+}
+70%{
+    transform: rotate(0);
+}
+80%{
+transform: rotate(-22deg);
+}
+90%{
+transform: rotate(22deg);
+}
+100%{
+transform:rotate(0deg);
+}
+}
+
+    .mySlides {
+        display: none;
+        width: 20vw;
+        left: 5%;
+
+
+    }
+
+    img {
+        vertical-align: middle;
+
+
+    }
+
+    .slideshow-container {
+        max-width: 1100px;
+        position: relative;
+        margin: auto;
+        margin-left: 1%;
+
+    }
+
+    .photoDj {
+
+        position: relative;
+        left: 0%;
+        padding-left: 0%;
+        margin-left: 0%;
+        width: auto;
+        z-index: 100;
+    }
+
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 19px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+        background-color: #717171;
+    }
+
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+
+    @media only screen and (max-width: 300px) {
+
+        .prev,
+        .next,
+        .text {
+            font-size: 11px
+        }
+    }
+
+    .boxi {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+
+
+    .element {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        border-top: 40px solid #fff;
+        border-right: 20px solid transparent;
+        border-left: 20px solid transparent;
+        transform-origin: top left;
+        transition: .25s;
+    }
+
+    .barredeRecherche .box form input {
+        font-size: 12px;
+    }
+
+    input[type="text"] {
+        background: #4e4a4a;
+        width: 340px;
+        height: 50px;
+        border: none;
+        outline: none;
+        padding: 0 25px;
+        border-radius: 25px 0 0 25px;
+    }
+
+    input[type="submit"] {
+        position: relative;
+        left: -5px;
+        border-radius: 0 25px 25px 0;
+        width: 150px;
+        height: 50px;
+        border: none;
+        cursor: pointer;
+        background: #ffc107;
+        color: #fff;
+    }
+
+    input[type="submit"]:hover {
+        background: #ff5722;
+    }
+
+    input {
+        position: relative;
+        display: inline-block;
+        font-size: 20px;
+        box-sizing: border-box;
+        transition: .5s;
+    }
+
+    .box {
+        width: 500px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .fin {
+        bottom: 0%;
+        position: absolute;
+        position: fixed;
+        text-align: center;
+        justify-content: center;
+        background: #fff;
+        left: 0%;
+        margin-bottom: 0%;
+        width: 100vw;
+        height: 5vh;
+    }
+
+    .fin span p {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .contenu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 6rem;
+        position: relative;
+
+
+    }
+
+    .all {
+        display: flex;
+        gap: 2rem;
+
+    }
+
+    .all .vid {
+        width: 35vw;
+    }
+
+    .all span button {
+        background-color: orange;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        width: 10vw;
+
+    }
+
+    .all {
+        width: 100vw;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 15px;
+        align-items: flex-start;
+        padding: 5px 25%;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 10%;
+        margin-left: -17%;
+
+
+    }
+
+    .main-video {
+        border-radius: 5px;
+        padding: 5px;
+        width: 30vw;
+        margin-left: -2rem;
+
+    }
+
+    .main-video video {
+        width: 100%;
+        border-radius: 5px;
+
+    }
+
+    .main-video .title {
+        color: #333;
+        font-size: 23px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+        font-size: 10px;
+    }
+
+    .video-list {
+        background: #fff;
+        border-radius: 5px;
+        height: 40vh;
+        overflow-y: scroll;
+        width: 40vw;
+        margin-right: -1rem;
+        padding-bottom: 20%;
+        position: relative;
+        margin-left: -3rem;
+        overflow-x: scroll;
+        margin-right: -3rem;
+    }
+
+    .video-list .vid video {
+        width: 100px;
+        border-radius: 5px;
+    }
+
+    iframe {
+        width: 100px;
+        height: 70px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .video-list::-webkit-scrollbar {
+        width: 7px;
+    }
+
+    .video-list::-webkit-scrollbar-track {
+        background: #ccc;
+        border-radius: 50px;
+    }
+
+    .video-list::-webkit-scrollbar-thumb {
+        background: #666;
+        border-radius: 50px;
+    }
+
+    .video-list .vid {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        background: #f7f7f7;
+        border-radius: 5px;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid rgba(0, 0, 0, .1);
+        cursor: pointer;
+
+    }
+
+
+    body {
+
+        background-color: whitesmoke;
+        height: 100%;
+        position: fixed;
+        padding-bottom: 5%;
+
+    }
+
+    header li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 1rem;
+    }
+
+    header {
+        position: relative;
+        padding: 0 2rem;
+    }
+
+    .navbar {
+        width: 100%;
+        height: 60px;
+        max-width: 1200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #0b0b30;
+        border-radius: 10px;
+        position: fixed;
+        top: 0%;
+    }
+
+    .navbar .logo a {
+        font-size: 1.5rem;
+        font-weight: bold;
+
+    }
+
+    .navbar .logo h4 {
+        color: #fff;
+        margin: 1rem;
+    }
+
+    .navbar .links {
+        display: flex;
+        gap: 2rem;
+        margin: 1rem;
+
+    }
+
+    .navbar .links i {
+        color: #fff;
+    }
+
+    .navbar .links i:hover {
+        transform: translateY(-10px);
+        transition: .100s ease-in-out;
+        border-bottom: rgb(49, 22, 22);
+    }
+
+    .navbar .toggle-btn {
+        font-size: 1.5rem;
+        cursor: pointer;
+        display: none;
+        width: 20vw;
+        color: #fff;
+        position: absolute;
+        right: 0%;
+    }
+
+    .action_btn {
+        background-color: orange;
+        color: #fff;
+        padding: 0.7rem 1rem;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: scale 0.2 ease-in-out;
+    }
+
+    .action_btn:hover {
+        scale: 1.05;
+        color: #fff;
+    }
+
+    .action_btn:active {
+        scale: 0.95;
+    }
+
+    .dropdown_menu {
+        position: relative;
+        right: 11rem;
+        height: 0;
+        top: 60px;
+        width: 200px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);
+        border-radius: 10px;
+        overflow: hidden;
+        display: none;
+        transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    }
+
+    .dropdown_menu li,
+    .action_btn {
+        padding: 1rem;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dropdown_menu li {
+        text-align: center;
+        justify-content: center;
+        width: 8.2vw;
+    }
+
+    .dropdown_menu .action_btn {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .dropdown_menu li a i:hover {
+        transform: scale(1.2);
+        transition: .20s ease-in-out;
+
+
+    }
+
+    .dropdown_menu li a .fa-facebook:hover {
+        color: blue;
+        transition: .10s ease-in-out;
+    }
+
+    .dropdown_menu li a .fa-twitter:hover {
+        color: black;
+        transition: .10s ease-in-out;
+    }
+
+    .dropdown_menu li a .fa-youtube:hover {
+        color: red;
+        transition: .10s ease-in-out;
+    }
+
+    .dropdown_menu.open {
+        height: 150px;
+    }
+
+    .barredeRecherche .box form input {
+        color: white;
+    }
+
+    @media(max-width:992px) {
+        .logo .youtubelink{
+border-radius:20px;
+background-color:rgb(245, 22, 22);
+transition:.50s ease-in-out;
+width:10vw;
+font-size: 8px;
+color: white;
+align-items:center;
+justify-content: center;
+padding-top: 5%;
+outline:none;
+margin:5px;
+padding:2px;
+}
+        .logo .auto-typing{
+            display:inline-block;
+        min-width: 20vw;
+        height:2vh;
+        color:whitesmoke;
+        font-weight: 800;
+        font-size:8px;
+        align-items: center;
+        justify-content: center;
+
+    }
+        .video-list {
+            margin-left: 1rem;
+        }
+
+        .video-list .vid {
+            width: 50vw;
+        }
+
+        .slideshow-container {
+            max-width: 260px;
+            position: relative;
+            margin-top: 50%;
+            left: 1%;
+        }
+
+        body {
+            position: fixed;
+
+        }
+
+        .contenu {
+
+            padding-bottom: 5rem;
+        }
+
+
+        .container {
+
+            margin-top: 5%;
+        }
+
+        .navbar .links {
+            display: none;
+        }
+
+        .barredeRecherche .box form input[type="text"] {
+            width: 20vw;
+            height: 7vh;
+        }
+
+        .barredeRecherche .box form input[type="submit"] {
+            width: 10vw;
+            height: 7vh;
+        }
+
+        .barredeRecherche .box form input {
+            font-size: 10px;
+            color: white;
+        }
+
+        .container {
+            grid-template-columns: 1.5fr 1fr;
+            padding: 10px;
+            margin-left: 2%;
+            padding-bottom: 5%;
+            overflow-x: scroll;
+            overflow-y: scroll;
+
+        }
+
+        .navbar .toggle-btn {
+            display: block;
+
+        }
+
+        .navbar .toggle-btn i {}
+
+        .dropdown_menu {
+            display: block;
+
+
+        }
+
+        .all span button {
+            font-size: 8px;
+        }
+
+        .dropdown_menu li {
+            text-align: center;
+            justify-content: center;
+            width: 60px;
+        }
+
+        .main-video {
+            margin-right: -20rem;
+        }
+
+        .main-video video {
+            margin-left: 5rem;
+            ;
+        }
+
+        .container .main-video .video .title {
+            margin-left: -5rem;
+            margin-right: -20rem;
+            position: relative;
+            left: 60%;
+            overflow-x: scroll;
+        }
+
+    }
+
+    @media(max-width:576px) {
+        .dropdown_menu {
+            width: unset;
+        }
+
+        .dropdown_menu li {
+            text-align: center;
+            justify-content: center;
+            width: 8.2vw;
+        }
+
+    }
+</style>
+
+</html>
